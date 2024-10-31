@@ -53,7 +53,7 @@ CREATE TABLE company_Info (
 -- Таблица Портфелей
 CREATE TABLE portfolios (
     portfolio_Id SERIAL PRIMARY KEY,
-    user_Name INT NOT NULL REFERENCES users(user_Name), 
+    user_Name VARCHAR(255) NOT NULL REFERENCES users(user_Name), 
     portfolio_Type VARCHAR(50),
     portfolio_Name VARCHAR(255)
 );
@@ -118,6 +118,6 @@ CREATE TABLE reports (
     report_Type VARCHAR(50) NOT NULL,
     report_Date DATE NOT NULL,
     report_Content TEXT,
-    user_Name INT NOT NULL REFERENCES users(user_Name)
+    user_Name VARCHAR(255) NOT NULL REFERENCES users(user_Name)
 );
 
