@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0"
+            prefWidth="477.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ru.demo.investmentapp.controller.CompanyInfo.CompanyInfoEditViewController">
+    <children>
+        <BorderPane layoutX="170.0" layoutY="47.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <bottom>
+                <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <buttons>
+                        <Button fx:id="BtnSave" defaultButton="true" mnemonicParsing="false" onAction="#BtnSaveAction" text="Сохранить" styleClass="ok-button"/>
+                        <Button fx:id="BtnCancel" cancelButton="true" mnemonicParsing="false" onAction="#BtnCancelAction" text="Отмена" styleClass="cancel-button"/>
+                    </buttons>
+                    <padding>
+                        <Insets right="20.0" />
+                    </padding>
+                </ButtonBar>
+            </bottom>
+            <center>
+                <VBox BorderPane.alignment="CENTER">
+                    <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Название" />
+                    <TextField fx:id="TextFieldCompanyName" GridPane.columnIndex="1" />
+
+                    <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Промышленность" GridPane.rowIndex="1" />
+                    <TextField fx:id="TextFieldIndustry" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                    <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Рыночная капитализация" GridPane.rowIndex="3" />
+                    <TextField fx:id="TextFieldMarketCap" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                    <Label text="Тип инструмента" GridPane.rowIndex="5" />
+                    <ComboBox fx:id="ComboBoxInstrument" prefHeight="20.0" prefWidth="475.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+                    <BorderPane.margin>
+                        <Insets left="5.0" right="5.0" top="20.0" />
+                    </BorderPane.margin>
+                </VBox>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

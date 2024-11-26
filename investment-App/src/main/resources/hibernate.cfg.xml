@@ -1,0 +1,36 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Set URL -->
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/investment_Company</property>
+        <!-- Set UserName -->
+        <property name="hibernate.connection.username">postgres</property>
+        <!-- Set Password -->
+        <property name="hibernate.connection.password">root</property>
+        <!-- Set Driver Name -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.show_sql">true</property>
+        <!-- Optional: Auto-generate schema -->
+        <!-- <property name = "hibernate.hbm2ddl.auto">create</property> -->
+        <mapping class="ru.demo.investmentapp.model.Account"/>
+        <mapping class="ru.demo.investmentapp.model.Client"/>
+        <mapping class="ru.demo.investmentapp.model.Commission"/>
+        <mapping class="ru.demo.investmentapp.model.CompanyInfo"/>
+        <mapping class="ru.demo.investmentapp.model.Instrument"/>
+        <mapping class="ru.demo.investmentapp.model.InvestmentStrategy"/>
+        <mapping class="ru.demo.investmentapp.model.MarketData"/>
+        <mapping class="ru.demo.investmentapp.model.PortfolioPosition"/>
+        <mapping class="ru.demo.investmentapp.model.PortfolioStrategy"/>
+        <mapping class="ru.demo.investmentapp.model.Portfolio"/>
+        <mapping class="ru.demo.investmentapp.model.Report"/>
+        <mapping class="ru.demo.investmentapp.model.Role"/>
+        <mapping class="ru.demo.investmentapp.model.Transaction"/>
+        <mapping class="ru.demo.investmentapp.model.User"/>
+    </session-factory>
+</hibernate-configuration>
+
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ru.demo.investmentapp.controller.MainWindowController">
+    <children >
+        <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <center>
+                <BorderPane fx:id="BorderPaneMainFrame" BorderPane.alignment="CENTER">
+                    <top>
+                        <FlowPane minHeight="-Infinity" nodeOrientation="LEFT_TO_RIGHT" rowValignment="TOP" BorderPane.alignment="CENTER">
+                            <children>
+                                <TextField fx:id="TextFieldSearch" onAction="#TextFieldSearchAction" prefHeight="25.0" prefWidth="262.0" promptText="Введите название для поиска" />
+                                <ComboBox fx:id="ComboBoxInstrument" onAction="#ComboBoxInstrumentAction" promptText="тип инвестиции" />
+                                <ComboBox fx:id="ComboBoxSort" onAction="#ComboBoxSortAction" promptText="сортировка" />
+                            </children>
+                        </FlowPane>
+                    </top>
+                    <center>
+                        <ListView fx:id="ListViewInstrument" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="201.0" prefWidth="600.0" BorderPane.alignment="CENTER"/>
+                    </center>
+
+                    <bottom>
+                        <FlowPane BorderPane.alignment="CENTER" />
+                    </bottom>
+                </BorderPane>
+            </center>
+            <bottom>
+                <Label fx:id="LabelInfo" text="Label" BorderPane.alignment="CENTER_LEFT" />
+            </bottom>
+            <top>
+                <HBox BorderPane.alignment="CENTER">
+                    <children>
+                        <MenuBar fx:id="MenuBarFile" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="231.0" HBox.hgrow="ALWAYS">
+                            <menus>
+                                <Menu mnemonicParsing="false" text="Файл">
+                                    <items>
+                                        <MenuItem fx:id="MenuItemMarketData" mnemonicParsing="false" onAction="#MenuItemMarketDataAction" text="Рыночные данные" />
+                                        <MenuItem fx:id="MenuItemCompanyInfo" mnemonicParsing="false" onAction="#MenuItemCompanyInfoAction" text="Информация о компаниях" />
+                                        <MenuItem fx:id="MenuItemStrategy" mnemonicParsing="false" onAction="#MenuItemStrategyAction" text="Инвестиционные стратегии" />
+                                        <MenuItem fx:id="MenuItemUser" mnemonicParsing="false" onAction="#MenuItemUserAction" text="Учетные данные" />
+                                        <MenuItem fx:id="MenuItemPortfolio" mnemonicParsing="false" onAction="#MenuItemPortfolioAction" text="Портфолио" />
+                                        <MenuItem fx:id="MenuItemTransaction" mnemonicParsing="false" onAction="#MenuItemTransactionAction" text="Операции" />
+                                        <MenuItem fx:id="MenuItemReport" mnemonicParsing="false" onAction="#MenuItemReportAction" text="Отчеты" />
+                                    </items>
+                                </Menu>
+
+
+                            </menus>
+                        </MenuBar>
+                        <Label fx:id="LabelUser" alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="user-label" text="Label" HBox.hgrow="ALWAYS">
+                            <padding>
+                                <Insets right="20.0" />
+                            </padding></Label>
+                    </children>
+                </HBox>
+            </top>
+        </BorderPane>
+    </children>
+</AnchorPane>
