@@ -90,7 +90,7 @@ public class MainWindowController implements Initializable {
 
     @FXML
     void MenuItemPortfolioAction(ActionEvent event) {
-        Manager.LoadSecondStageScene("Portfolio/portfolio-table-view.fxml", "Портфолио");
+        Manager.LoadSecondStageScene("Portfolio/portfolio-table-view.fxml", "Портфели");
     }
 
     @FXML

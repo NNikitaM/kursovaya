@@ -66,7 +66,7 @@ public class CommissionTableViewController implements Initializable {
 
     @FXML
     void MenuItemBackAction(ActionEvent event) {
-        Manager.LoadSecondStageScene("main-view.fxml", "ООО Инвестиции");
+        Manager.LoadSecondStageScene("main-view.fxml", "Aurora Growth");
     }
 
     @FXML

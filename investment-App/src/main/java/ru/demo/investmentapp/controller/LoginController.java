@@ -122,7 +122,7 @@ public class LoginController implements Initializable {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        newWindow.setTitle("ООО Инвестиции");
+        newWindow.setTitle("Aurora Growth");
         newWindow.setMaximized(true);
         newWindow.setScene(scene);
         newWindow.setOnCloseRequest(e -> {

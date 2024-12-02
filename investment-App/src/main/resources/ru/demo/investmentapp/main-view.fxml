@@ -54,7 +54,7 @@
                                         <MenuItem fx:id="MenuItemCompanyInfo" mnemonicParsing="false" onAction="#MenuItemCompanyInfoAction" text="Информация о компаниях" />
                                         <MenuItem fx:id="MenuItemStrategy" mnemonicParsing="false" onAction="#MenuItemStrategyAction" text="Инвестиционные стратегии" />
                                         <MenuItem fx:id="MenuItemUser" mnemonicParsing="false" onAction="#MenuItemUserAction" text="Учетные данные" />
-                                        <MenuItem fx:id="MenuItemPortfolio" mnemonicParsing="false" onAction="#MenuItemPortfolioAction" text="Портфолио" />
+                                        <MenuItem fx:id="MenuItemPortfolio" mnemonicParsing="false" onAction="#MenuItemPortfolioAction" text="Портфели" />
                                         <MenuItem fx:id="MenuItemTransaction" mnemonicParsing="false" onAction="#MenuItemTransactionAction" text="Операции" />
                                         <MenuItem fx:id="MenuItemReport" mnemonicParsing="false" onAction="#MenuItemReportAction" text="Отчеты" />
                                     </items>

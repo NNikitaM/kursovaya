@@ -23,10 +23,10 @@
             <center>
                 <VBox BorderPane.alignment="CENTER">
                     <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Фамилия" GridPane.rowIndex="0" />
-                    <TextField fx:id="TextFieldFirstName" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                    <TextField fx:id="TextFieldLastName" GridPane.columnIndex="1" GridPane.rowIndex="0" />
 
                     <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Имя" GridPane.rowIndex="1" />
-                    <TextField fx:id="TextFieldLastName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    <TextField fx:id="TextFieldFirstName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
 
                     <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Отчество" GridPane.rowIndex="2" />
                     <TextField fx:id="TextFieldMiddleName" GridPane.columnIndex="1" GridPane.rowIndex="2" />

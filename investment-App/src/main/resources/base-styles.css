@@ -1,10 +1,14 @@
 .root {
+    -fx-font-style: italic;
+    -fx-font-family: "Arial";
     -fx-main-bg-color: #F8F8F8;
     -fx-additional-bg-color: #4b4b4da1;
     -fx-akcent-bg-color: #0a0145;
 }
 
 .cancel-button {
+    -fx-font-style: italic;
+    -fx-font-family: "Arial";
     -fx-border-style: solid;
     -fx-border-color: #FF5555;
     -fx-background-color: #FF5555;
@@ -17,6 +21,8 @@
 }
 
 .ok-button {
+    -fx-font-style: italic;
+    -fx-font-family: "Arial";
     -fx-border-style: solid;
     -fx-border-color: #55FF55;
     -fx-background-color: #55FF55;

@@ -31,8 +31,8 @@
                         <TableView fx:id="TableViewClients" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
                             <columns>
                                 <TableColumn id="TableColumnId" fx:id="TableColumnId" prefWidth="82.0" text="Id" />
-                                <TableColumn id="TableColumnFirstName" fx:id="TableColumnFirstName" editable="false" maxWidth="1.7976931348623157E308" prefWidth="300.0" text="Фамилия" />
-                                <TableColumn id="TableColumnLastName" fx:id="TableColumnLastName" editable="false" maxWidth="1.7976931348623157E308" prefWidth="300.0" text="Имя" />
+                                <TableColumn id="TableColumnLastName" fx:id="TableColumnLastName" editable="false" maxWidth="1.7976931348623157E308" prefWidth="300.0" text="Фамилия" />
+                                <TableColumn id="TableColumnFirstName" fx:id="TableColumnFirstName" editable="false" maxWidth="1.7976931348623157E308" prefWidth="300.0" text="Имя" />
                                 <TableColumn id="TableColumnMiddleName" fx:id="TableColumnMiddleName" editable="false" maxWidth="1.7976931348623157E308" prefWidth="300.0" text="Отчество" />
                                 <TableColumn id="TableColumnAddress" fx:id="TableColumnAddress" editable="false" maxWidth="1.7976931348623157E308" prefWidth="300.0" text="Адрес" />
                                 <TableColumn id="TableColumnEmail" fx:id="TableColumnEmail" editable="false" maxWidth="1.7976931348623157E308" prefWidth="300.0" text="Email" />

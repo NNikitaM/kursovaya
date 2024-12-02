@@ -19,10 +19,7 @@ import ru.demo.investmentapp.InvestmentApp;
 import ru.demo.investmentapp.controller.MainWindowController;
 import ru.demo.investmentapp.model.*;
 import ru.demo.investmentapp.service.*;
-import javafx.scene.control.*;
 
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.List;
 import java.util.Optional;
